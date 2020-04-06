@@ -1,58 +1,71 @@
-body{
+body {
     background-color: white;
     font-family: PT Sans,Helvetica,Arial,sans-serif;
 }
-.container{
+.container {
     width: 1200px;
     margin: 0px 75px;
 }
 
-.primary_header {
+.primary-header {
     background-color: #f5f4f4;
     width: 1200px;
-    height: 170px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
 }
 
-.head_nav1{
-    text-align: right;
-    float:right;
+.logo-image {
+    width: 406px; 
+    height: 81px; 
     margin-top: 50px;
+    margin-left: 20px;
 }
 
-.head_nav1 li{
+.head-nav {
+    display: flex;
+    flex-direction: column;
+}
+.head-nav1 {
+    text-align: right;
+}
+
+.head-nav1 ul {
+    margin:50px 0px 20px 0px;
+}
+.head-nav1 li {
     display: inline;
     list-style: none;
 }
-.head_nav1 a{
+.head-nav1 a {
     color: #8f8f8e;
     text-decoration: none;
     padding: 10px;
 }
 
-.head_nav1 a:hover{
+.head-nav1 a:hover {
     color: orange;
 }
 
-.head_nav2{
-    clear: both;
+.head-nav2 {
     text-align: right;
-    margin-bottom: 20px;
-    padding-bottom: 50px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 
-.head_nav2 li {
+.head-nav2 li {
     display: inline;
     list-style: none;
     border-right: 0.5px solid #8f8f8e;
     padding: 0px 10px;
 }
 
-.head_nav2 a{
+.head-nav2 a {
     color: #8f8f8e;
     text-decoration: none;
 }
 
-.head_nav2 a:hover{
+.head-nav2 a:hover {
     color: #11dc00
 }
 
