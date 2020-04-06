@@ -2,13 +2,15 @@
 <head>
     <title>Grocery Store Zencart</title>
     <link rel="stylesheet" href="style.css">
+     <!-- fontawsome -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+    <meta name=”viewport” content="width=device-width, initial-scale=1.0"> 
 </head>
 <body>
     <div class="container">
-        <div class="primary-header">
-            
-            <img class="logo-image" src="logo.jpg" alt="Super Market logo">
-            
+        <div class="primary-header">            
+            <img class="logo-image" src="logo.jpg" alt="Super Market logo">            
             <div class="head-nav">
                 <div class="head-nav1">
                     <ul>
@@ -18,109 +20,124 @@
                 </div>
                 <div class="head-nav2">
                     <ul>
-                        <li><a href="#" class="link_nav2">New Products</a></li>
-                        <li><a href="#" class="link_nav2">Specials</a></li>
-                        <li><a href="#" class="link_nav2">All Products</a></li>
-                        <li><a href="#" class="link_nav2">Reviews</a></li>
-                        <li><a href="#" class="link_nav2">Contacts</a></li>
-                        <li><a href="#" class="link_nav2">FAQs</a></li>
-                        <li><a href="#" class="link_nav2">US Dollar</a></li>
-                        <li><a href="#" class="link_nav2">En</a></li>
+                        <li><a href="#" class="link-nav2">New Products</a></li>
+                        <li><a href="#" class="link-nav2">Specials</a></li>
+                        <li><a href="#" class="link-nav2">All Products</a></li>
+                        <li><a href="#" class="link-nav2">Reviews</a></li>
+                        <li><a href="#" class="link-nav2">Contacts</a></li>
+                        <li><a href="#" class="link-nav2">FAQs</a></li>
+                        <li><a href="#" class="link-nav2">US Dollar</a></li>
+                        <li><a href="#" class="link-nav2">En</a></li>
                     </ul>
                 </div>
             </div>            
         </div>
-        <div class="left_nav">
-            <ul>
-                <li><a href="#" class="link_left_nav">CATEGORIES</a></li>
-                <li><a href="#" class="link_left_nav">Bread & Bakery</a></li>
-                <li><a href="#" class="link_left_nav">Drinks</a></li>
-                <li><a href="#" class="link_left_nav">Fresh Meats</a></li>
-                <li><a href="#" class="link_left_nav">Fresh Fish</a></li>
-                <li><a href="#" class="link_left_nav">Fruits & Vegetables</a></li>
-                <li><a href="#" class="link_left_nav">Grocery & Frozen</a></li>
-            </ul>
-            <h1>Specials</h1>
-            <img style="width: 200px; height:200px;" src="11.png">
-            <a class ="product_name" href="#">Del Monte Garden Salad</a>
-            <h3 class="sale_off_price">$124.00</h3>
-            <h3 class="price_product">$105.40</h3>
-            <a class="button_special" href="#">All Specials</a>
-        </div>
-        <div class="main_content">
-            <div class="search_info">
-                <form style="display: inline;">
-                    <input class="search_text" type="text" id ="search">
-                    <input class="btnSearch" type="button" value="Search">
-                </form>
-                <p class="cart">Cart: 0 items</p>
+        <div class="content">
+            <div class="left-nav">
+                <ul>
+                    <li><a href="#" class="link_left_nav">CATEGORIES</a></li>
+                    <li><a href="#" class="link_left_nav">Bread & Bakery</a></li>
+                    <li><a href="#" class="link_left_nav">Drinks</a></li>
+                    <li><a href="#" class="link_left_nav">Fresh Meats</a></li>
+                    <li><a href="#" class="link_left_nav">Fresh Fish</a></li>
+                    <li><a href="#" class="link_left_nav">Fruits & Vegetables</a></li>
+                    <li><a href="#" class="link_left_nav">Grocery & Frozen</a></li>
+                </ul>
+                <h1>Specials</h1>
+                <img style="width: 200px; height:200px;" src="11.png">
+                <a class ="product_name" href="#">Del Monte Garden Salad</a>
+                <h3 class="sale_off_price">$124.00</h3>
+                <h3 class="price_product">$105.40</h3>
+                <a class="button_special" href="#">All Specials</a>
             </div>
-            <div class="contain">
-                <img class = "slide" src="slide1.jpg">
-                <div class="big_sale">
-                    <p style="font-size: 25px; font-weight: bold; margin-top: 40px; margin-bottom: 0px; margin-left: 40px;">BIG SALE</p>
-                    <p style="text-transform: uppercase; margin-top: 0px; margin-left: 40px;">Get up to 25% off</p>
+            <div class="main-content">
+                <div class="search_info">
+                    <div style="font-size: 35px; padding: 10px; color: #00000040; margin-left: 40px ;" class="fa fa-search"></div>
+                    <form style="width: 80%; margin: 0px;">
+                        <input class="search_text" type="text" id ="search">
+                        <input class="btnSearch" type="button" value="Search">
+                    </form>
+                    <p class="cart"><i style="font-size: 30px; padding: 0px; color: white;"class="fa fa-shopping-cart" aria-hidden="true"></i>   Cart: 0 items</p>
                 </div>
-                <div class="free_shipping">
-                    <p style="font-size: 25px; font-weight: bold; margin-top: 40px; margin-bottom: 0px; margin-left: 40px;">FREE SHIPPING</p>
-                    <p style="text-transform: uppercase; margin-top: 0px; margin-left: 40px;">On orders over $99</p>
+                <div class="contain">
+                    <img class = "slide" src="slide1.jpg">
+                    <div class="banner">
+                        <div class="big_sale">
+                            <p style="font-size: 25px; font-weight: bold; margin-top: 40px; margin-bottom: 0px; margin-left: 40px;">BIG SALE</p>
+                            <p style="text-transform: uppercase; margin-top: 0px; margin-left: 40px;">Get up to 25% off</p>
+                        </div>
+                        <div class="free_shipping">
+                            <p style="font-size: 25px; font-weight: bold; margin-top: 40px; margin-bottom: 0px; margin-left: 40px;">FREE SHIPPING</p>
+                            <p style="text-transform: uppercase; margin-top: 0px; margin-left: 40px;">On orders over $99</p>
+                        </div>
+                        <div class="off">
+                                <p style="font-size: 25px; font-weight: bold; margin-top: 40px; margin-bottom: 0px; margin-left: 40px;">10% OFF</p>
+                                <p style="font-size: 14px; text-transform: uppercase; margin-top: 0px; margin-left: 40px;">When you use credit card</p>
+                        </div>
+                    </div>
+                    <div class="product_list">
+                        <div class="featured-product">
+                            <h1 class="title_product">Featured Products</h1>
+                            <div style="width: 270px;float:left" class="product1">
+                                <img class="image_product" src="01.png">
+                                <a class ="product_name" href="#">Spanish stir-fry veg</a>
+                                <p class="price_product">$550.00</p>
+                                <i style="border-radius: 3px; font-size: 40px; padding: 5px; color: white; background-color: #117f08fa;"class="fa fa-shopping-cart" aria-hidden="true"></i> 
+                                <a class="button_special" href="#" class="link_detail">Details</a>
+                            </div>
+                            <div style ="float: left; width: 270px;"class="product2">
+                                <img class="image_product" src="02.png">
+                                <a class ="product_name" href="#">Newcastle Brown Ale</a>
+                                <p class="price_product">$160.00</p>
+                                <i style="border-radius: 3px; font-size: 40px; padding: 5px; color: white; background-color: #117f08fa;"class="fa fa-shopping-cart" aria-hidden="true"></i> 
+                                <a  class="button_special" href="#" class="link_detail">Details</a>
+                            </div>
+                            <div class="product3">
+                                <img class="image_product" src="03.png">
+                                <a class ="product_name" href="#">Farm House Vitamin S</a>
+                                <p class="price_product">$241.00</p>
+                                <i style="border-radius: 3px; font-size: 40px; padding: 5px; color: white; background-color: #117f08fa;"class="fa fa-shopping-cart" aria-hidden="true"></i> 
+                                <a class="button_special" href="#" class="link_detail">Details</a>
+                            </div>
+                        </div>
+                        <div class="new-products">
+                            <h1 class="title_product" style="margin-top: 40px;">New Products For April</h1>
+                            <div style ="float: left; width: 270px;" class="product4">
+                                <img class="image_product" src="01.png">
+                                <a class ="product_name" href="#">Spanish stir-fry veg</a>
+                                <p class="price_product">$550.00</p>
+                                <i style="border-radius: 3px; font-size: 40px; padding: 5px; color: white; background-color: #117f08fa;"class="fa fa-shopping-cart" aria-hidden="true"></i> 
+                                <a class="button_special" href="#" class="link_detail">Details</a>
+                            </div>
+                            <div style ="float: left; width: 270px;" class="product5">
+                                <img class="image_product" src="02.png">
+                                <a class ="product_name"href="#">Newcastle Brown Ale</a>
+                                <p class="price_product">$160.00</p>
+                                <i style="border-radius: 3px; font-size: 40px; padding: 5px; color: white; background-color: #117f08fa;"class="fa fa-shopping-cart" aria-hidden="true"></i> 
+                                <a class="button_special" href="#" class="link_detail">Details</a>
+                            </div>
+                            <div class="product6">
+                                <img class="image_product" src="03.png">
+                                <a class ="product_name" href="#">Farm House Vitamin S</a>
+                                <p class="price_product">$241.00</p>
+                                <i style="border-radius: 3px; font-size: 40px; padding: 5px; color: white; background-color: #117f08fa;"class="fa fa-shopping-cart" aria-hidden="true"></i> 
+                                <a class="button_special" href="#" class="link_detail">Details</a>
+                            </div>
+                        </div>
+                    </div>                
                 </div>
-                <div class="off">
-                        <p style="font-size: 25px; font-weight: bold; margin-top: 40px; margin-bottom: 0px; margin-left: 40px;">10% OFF</p>
-                        <p style="font-size: 14px; text-transform: uppercase; margin-top: 0px; margin-left: 40px;">When you use credit card</p>
-                </div>
-                <div class="product_list">
-                    <h1 class="title_product">Featured Products</h1>
-                    <div style="width: 270px;float:left" class="product1">
-                        <img class="image_product" src="01.png">
-                        <a class ="product_name" href="#">Spanish stir-fry veg</a>
-                        <p class="price_product">$550.00</p>
-                        <a class="button_special" href="#" class="link_detail">Details</a>
-                    </div>
-                    <div style ="float: left; width: 270px;"class="product2">
-                        <img class="image_product" src="02.png">
-                        <a class ="product_name" href="#">Newcastle Brown Ale</a>
-                        <p class="price_product">$160.00</p>
-                        <a  class="button_special" href="#" class="link_detail">Details</a>
-                    </div>
-                    <div class="product3">
-                        <img class="image_product" src="03.png">
-                        <a class ="product_name" href="#">Farm House Vitamin S</a>
-                        <p class="price_product">$241.00</p>
-                        <a class="button_special" href="#" class="link_detail">Details</a>
-                    </div>
-                    <h1 class="title_product" style="margin-top: 40px;">New Products For April</h1>
-                    <div style ="float: left; width: 270px;" class="product4">
-                        <img class="image_product" src="01.png">
-                        <a class ="product_name" href="#">Spanish stir-fry veg</a>
-                        <p class="price_product">$550.00</p>
-                        <a class="button_special" href="#" class="link_detail">Details</a>
-                    </div>
-                    <div style ="float: left; width: 270px;" class="product5">
-                        <img class="image_product" src="02.png">
-                        <a class ="product_name"href="#">Newcastle Brown Ale</a>
-                        <p class="price_product">$160.00</p>
-                        <a class="button_special" href="#" class="link_detail">Details</a>
-                    </div>
-                    <div class="product6">
-                        <img class="image_product" src="03.png">
-                        <a class ="product_name" href="#">Farm House Vitamin S</a>
-                        <p class="price_product">$241.00</p>
-                        <a class="button_special" href="#" class="link_detail">Details</a>
-                    </div>
-                </div>                
             </div>
         </div>
     </div>
     <div class="footer">
-        <p style="float: left;">Copyright © 2020 <a style="text-decoration: none; color: #8f8f8e; margin-right: 5px ;" href="#">Super Market</a>Powered by</p>
-        <div style="margin-top: 15px;" class="footer_nav">
-            <ul>
-                    <li><a class="footer_link" href="#">Zen Cart</a></li>
-                    <li><a  class="footer_link" href="#">Privacy Notice</a></li>
-                    <li><a class="footer_link" href="#">Template Setting</a></li>
-            </ul>
-        </div>        
+            <p>Copyright © 2020 <a style="text-decoration: none; color: #8f8f8e; margin-right: 5px ;" href="#">Super Market</a>Powered by</p>
+            <div style="margin-top: 15px;" class="footer_nav">
+                <ul>
+                        <li><a class="footer_link" href="#">Zen Cart</a></li>
+                        <li><a  class="footer_link" href="#">Privacy Notice</a></li>
+                        <li><a class="footer_link" href="#">Template Setting</a></li>
+                </ul>
+            </div>        
     </div>
 </body>
 </html>
