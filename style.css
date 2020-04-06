@@ -10,7 +10,7 @@ body {
 .container {
     /* display: flex;
     flex-direction: column; */
-    width: 1280;
+    
     margin: 0px 75px;
 }
 .contain{
@@ -332,7 +332,112 @@ i:hover {
     padding: 0px 10px;
 }
 
-.footer_nav a{
+.footer_nav a {
     color: #8f8f8e;
     text-decoration: none;
+}
+
+.info_contact {
+    background-color: white;
+    border: 1px solid #4d52554d;
+    margin-left: 20px;
+}
+
+.info_contact h4 {
+    font-family: Arial,Helvetica,sans-serif; 
+    font-size: 15px; 
+    color: #4d52558c;
+    border: 1px solid #4d52554d;
+    padding: 10px;
+    width: 100px;
+    position: relative;
+    top: -40px;
+    background: white;
+}
+.title-contact {
+    color: #8f8f8e;
+    font-size: 25px;
+    font-weight: lighter;
+    border-bottom: 2px solid #117f08fa;
+    padding: 5px 5px;
+    margin-left: 20px;
+}
+.contact-content {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.label-contact {
+    font-family: Arial,Helvetica,sans-serif; 
+    font-size: 15px; 
+    color: #4d5255db;
+    text-align: left;
+    padding: 20px;
+    margin-left: 20px;
+    height: 50px;
+}
+.label-contact-message {
+    font-family: Arial,Helvetica,sans-serif; 
+    font-size: 15px; 
+    color: #4d5255db;
+    text-align: left;
+    padding: 20px;
+    margin-left: 20px;
+    height: 50px;
+}
+.textbox-contact-full-name {
+    text-align: right;
+    margin: 10px 20px 10px 30px;
+    width: 50%;
+    border: 1px solid #4d525538;
+}
+
+.textbox-contact-email{
+    text-align: right;
+    margin: 10px 20px 10px 0px;
+    width: 50%;
+    border: 1px solid #4d525538;
+}
+.textarea-message{
+    text-align: right;
+    margin: 10px 20px 10px 35px;
+    width: 50%;
+    height: 100px;
+    resize: none;    
+    border: 1px solid #4d525538;
+}
+
+.form-contact {
+    border: 1px solid #4d525538;
+    padding: 0px 00px 50px 20px ;
+    width: 95%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.box-button {
+    margin: 30px 0px;
+}
+
+.button-contact-back {
+    font-family: Arial,Helvetica,sans-serif; 
+    font-size: 15px; 
+    color: #4d5255db;
+    border: 1px solid #4d525538;
+    height: 40px;
+    width: 60px;
+    margin-left: 10px;
+}
+.button-contact-send-now {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 15px;
+    color: #4d5255db;
+    border: 1px solid #4d525538;
+    height: 40px;
+    width: 85px;
+    margin-right: 10px;
+    float: right;
+}
+.blank{
+    height: 150px;
 }
