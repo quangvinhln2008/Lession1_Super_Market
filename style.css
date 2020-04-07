@@ -1,69 +1,96 @@
-body{
+
+body {
+    width: 1280px;
+    margin: auto;
     background-color: white;
     font-family: PT Sans,Helvetica,Arial,sans-serif;
+    display: flex;
+    flex-direction: column;
 }
-.container{
-    width: 1200px;
+.container {
+    /* display: flex;
+    flex-direction: column; */
+    
     margin: 0px 75px;
 }
-
-.primary_header {
+.contain{
+    width: 100%;
+    height: auto;
+}
+.primary-header {
     background-color: #f5f4f4;
-    width: 1200px;
-    height: 170px;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
 }
 
-.head_nav1{
-    text-align: right;
-    float:right;
+.logo-image {
+    width: 30%; 
+    height: 81px; 
     margin-top: 50px;
+    margin-left: 20px;
 }
 
-.head_nav1 li{
+.head-nav {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.head-nav1 {
+    text-align: right;
+}
+
+.head-nav1 ul {
+    margin:50px 0px 20px 0px;
+}
+.head-nav1 li {
     display: inline;
     list-style: none;
 }
-.head_nav1 a{
+.head-nav1 a {
     color: #8f8f8e;
     text-decoration: none;
     padding: 10px;
 }
 
-.head_nav1 a:hover{
+.head-nav1 a:hover {
     color: orange;
 }
 
-.head_nav2{
-    clear: both;
+.head-nav2 {
     text-align: right;
-    margin-bottom: 20px;
-    padding-bottom: 50px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 
-.head_nav2 li {
+.head-nav2 li {
     display: inline;
     list-style: none;
     border-right: 0.5px solid #8f8f8e;
-    padding: 0px 10px;
+    padding: 0px 5px;
 }
 
-.head_nav2 a{
+.head-nav2 a {
     color: #8f8f8e;
     text-decoration: none;
 }
 
-.head_nav2 a:hover{
+.head-nav2 a:hover {
     color: #11dc00
 }
 
-.left_nav{
+.content{
+    width: 100%;
+}
+.left-nav {
     float: left;
     text-align: left;
-    width: 300px;
+    width: 30%;
     height: 600px;
 }
 
-.left_nav li{
+.left-nav li {
     background-color:#8ac53f;
     padding: 20px;
     border-bottom: 1px solid #6b9d2c;
@@ -72,20 +99,20 @@ body{
     list-style: none;
 }
 
-.left_nav li:hover{
+.left-nav li:hover {
     background-color: #6b9d2c;
 }
 
-.link_left_nav{
+.link_left_nav {
     color: white;
     text-decoration: none;
 }
-.left_nav ul{
+.left-nav ul {
     margin:0px;
     padding: 0px;
 }
 
-.left_nav h1{
+.left-nav h1 {
     color: #595958;
     text-transform: capitalize;
     font-family: open sans,sans-serif;
@@ -96,7 +123,7 @@ body{
     border-bottom: 2px solid orange;
 }
 
-.left_nav img{
+.left-nav img {
     margin: 20px 0px;
     border: 1px solid #d4d4d4;
     padding:50px;
@@ -109,7 +136,12 @@ body{
 .product_name{
     color: #8ac53f;
     text-decoration: none;
-    padding: 5px 30px;
+}
+
+.product-name-special{
+    color: #8ac53f;
+    text-decoration: none;
+    padding: 60px;
 }
 .sale_off_price{
     color: #ababab;
@@ -128,52 +160,57 @@ body{
 .button_special{
     text-decoration: none;
     border: 1px solid #ababab;
-    padding: 10px 10px;
+    padding: 10px 10px 5px 10px;
     font-weight: bold;
+    margin-left: 10px;
 }
 
 .button_special:hover{
     background-color: #fff;
 }
 
-.search_info{
-    width: 890px;
-    height: 40px;
-   float: left;
-   border: 1px solid #ababab;
-   padding-top: 20px;
+.search-info{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 40px;   
+    border-bottom: 0.5px solid #ababab;
+    padding: 10px 0px;
 }
 
 .cart{
-    position: absolute;
-    top: 160px;
-    right: 75px;
+    margin: 0px;
     color: white;
     font-weight: bold;
     background-color: #fe8802;
     border: 1px solid #fe8802;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    padding-right: 150px;
-    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 9px;
+    padding-right: 100px;
+    padding-left: 30px;
+    width: 28%;
     height: 30px;
     border-radius: 3px;
 }
 
-.search_text{
-    height: 30px;
-    width: 400px;
-    border: 1px solid #ababab;
-    margin-left: 80px;
-    margin-right: 1px;
+.main-content {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
 }
+
+.search_text{
+    height: 40px;
+    width: 70%;
+    border: 1px solid #ababab;
+    background-color: #f5f4f4;
+}
+
 .btnSearch{
-    position: absolute;
-    top: 180px;
     border:  solid #8ac53f;
     background-color: #8ac53f;
-    padding: 15px 20px;
-    width: 120px;
+    width: 28%;
+    height: 40px;
     font-size: 20px;
     color: white;
     font-weight: bold;
@@ -183,15 +220,19 @@ body{
 .slide{
     margin-top: 40px;
     margin-left: 20px;
+    width: 100%;
 }
 
+.banner{
+    display: flex;
+    flex-direction: row;
+}
 .big_sale{
     background-color: #ffe635;
     height: 133px;
-    width: 270px;
+    width: 33%;
     color: white;
     font-weight: bold;
-    float: left;
     margin-top: 30px;
     margin-left: 19px;
 }
@@ -203,10 +244,9 @@ body{
 .free_shipping{
     background-color: #ffa035;
     height: 133px;
-    width: 270px;
+    width: 33%;
     color: white;
     font-weight: bold;
-    float: left;
     margin-top: 30px;
     margin-left: 19px;
 }
@@ -214,9 +254,8 @@ body{
 .off{
     background-color: #117f08fa;
     height: 133px;
-    width: 270px;
+    width: 33%;
     color: white;
-    float: left;
     margin-top: 30px;
     margin-left: 19px;
 }
@@ -228,22 +267,17 @@ body{
 }
 
 .product_list{
-    position: absolute;
-    top: 800px;
-    right: 80px;
     margin-top: 20px;
-    margin-left: 30px;
-    width: 850px;
+    width: 100%;
 }
-
 
 .image_product{
     text-align: center;
-    height: 200px;
-    width: 200px;
+    height: 190px;
+    width: 190px;
     margin: 20px 0px;
     border: 1px solid #d4d4d4;
-    padding:25px;
+    padding:10px;
 }
 
 .link_product{
@@ -258,17 +292,36 @@ body{
  border-bottom: 2px solid #117f08fa;
  padding: 5px 5px;
 }
-.footer{
-    clear: both;
-    position: absolute;
-    top: 1820px;
-    width: 100%;
-    height: 70px;
-    background-color: #f5f4f4;
-    padding-left: 50px;
-    color: #8f8f8e;  
+.featured-product {
+    margin-left: 35px;;
 }
 
+i:hover {
+    background-color: orange;
+}
+
+.new-products {
+    margin-left: 35px;;
+}
+ i:hover {
+    background-color: orange;
+}
+.footer{
+    height: 70px;
+    background-color: #f5f4f4;
+    padding-top: 20px;
+    padding-left: 50px;
+    color: #8f8f8e;  
+    margin-top: 20px;
+}
+
+.footer p {
+    display: inline;
+}
+
+.footer_nav {
+    display: inline;
+}
 .footer_nav ul{
     display: inline;
 }
@@ -279,7 +332,112 @@ body{
     padding: 0px 10px;
 }
 
-.footer_nav a{
+.footer_nav a {
     color: #8f8f8e;
     text-decoration: none;
+}
+
+.info_contact {
+    background-color: white;
+    border: 1px solid #4d52554d;
+    margin-left: 20px;
+}
+
+.info_contact h4 {
+    font-family: Arial,Helvetica,sans-serif; 
+    font-size: 15px; 
+    color: #4d52558c;
+    border: 1px solid #4d52554d;
+    padding: 10px;
+    width: 100px;
+    position: relative;
+    top: -40px;
+    background: white;
+}
+.title-contact {
+    color: #8f8f8e;
+    font-size: 25px;
+    font-weight: lighter;
+    border-bottom: 2px solid #117f08fa;
+    padding: 5px 5px;
+    margin-left: 20px;
+}
+.contact-content {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.label-contact {
+    font-family: Arial,Helvetica,sans-serif; 
+    font-size: 15px; 
+    color: #4d5255db;
+    text-align: left;
+    padding: 20px;
+    margin-left: 20px;
+    height: 50px;
+}
+.label-contact-message {
+    font-family: Arial,Helvetica,sans-serif; 
+    font-size: 15px; 
+    color: #4d5255db;
+    text-align: left;
+    padding: 20px;
+    margin-left: 20px;
+    height: 50px;
+}
+.textbox-contact-full-name {
+    text-align: right;
+    margin: 10px 20px 10px 30px;
+    width: 50%;
+    border: 1px solid #4d525538;
+}
+
+.textbox-contact-email{
+    text-align: right;
+    margin: 10px 20px 10px 0px;
+    width: 50%;
+    border: 1px solid #4d525538;
+}
+.textarea-message{
+    text-align: right;
+    margin: 10px 20px 10px 35px;
+    width: 50%;
+    height: 100px;
+    resize: none;    
+    border: 1px solid #4d525538;
+}
+
+.form-contact {
+    border: 1px solid #4d525538;
+    padding: 0px 00px 50px 20px ;
+    width: 95%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.box-button {
+    margin: 30px 0px;
+}
+
+.button-contact-back {
+    font-family: Arial,Helvetica,sans-serif; 
+    font-size: 15px; 
+    color: #4d5255db;
+    border: 1px solid #4d525538;
+    height: 40px;
+    width: 60px;
+    margin-left: 10px;
+}
+.button-contact-send-now {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 15px;
+    color: #4d5255db;
+    border: 1px solid #4d525538;
+    height: 40px;
+    width: 85px;
+    margin-right: 10px;
+    float: right;
+}
+.blank{
+    height: 200px;
 }
