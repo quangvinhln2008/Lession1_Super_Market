@@ -78,7 +78,6 @@ body {
 .head-nav2 li:first-child {
     border-left: 0px;
 }
-
 .head-nav2 a.end-link {
     font-weight: bold;
     color:#8ac53f;
@@ -420,7 +419,6 @@ i:hover {
     width: 50%;
     border: 1px solid #4d525538;
 }
-
 .margin-text {
     margin-left: 30px;
 }
@@ -442,7 +440,6 @@ i:hover {
 .box-button {
     margin: 30px 0px;
 }
-
 .box-button a{
     color: black;
     text-decoration: underline;
