@@ -4,9 +4,11 @@
 		<link rel="stylesheet" href="style.css">
 		 <!-- fontawsome -->
 		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-
 		 <!-- Responsive Web -->
 		<meta name=”viewport” content="width=device-width, initial-scale=1.0"> 
+
+		<!-- javascript file -->
+		<script src="main.js"></script>
 </head>
 <body>
 	<div class="container">
@@ -58,7 +60,7 @@
 						<input class="search_text" type="text" id ="search">
 						<input class="btnSearch" type="button" value="Search">
 					</form>
-					<p class="cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart: 0 items</p>
+					<p class="cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart: <span id="countItems">0</span> items</p>
 				</div>
 				<div class="contain">
 					<img class = "slide" src="slide1.jpg">
@@ -83,21 +85,21 @@
 								<img class="image_product" src="01.png">
 								<a class ="product_name" href="#">Spanish stir-fry veg</a>
 								<p class="price_product">$550.00</p>
-								<i class="fa fa-shopping-cart" aria-hidden="true"></i> 
+								<i onclick="addToCart()" class="fa fa-shopping-cart" aria-hidden="true"></i> 
 								<a class="button_special" href="#" class="link_detail">Details</a>
 							</div>
 							<div class="product">
 								<img class="image_product" src="02.png">
 								<a class ="product_name" href="#">Newcastle Brown Ale</a>
 								<p class="price_product">$160.00</p>
-								<i class="fa fa-shopping-cart" aria-hidden="true"></i> 
+								<i onclick="addToCart()" class="fa fa-shopping-cart" aria-hidden="true"></i> 
 								<a  class="button_special" href="#" class="link_detail">Details</a>
 							</div>
 							<div class="product">
 								<img class="image_product" src="03.png">
 								<a class ="product_name" href="#">Farm House Vitamin S</a>
 								<p class="price_product">$241.00</p>
-								<i class="fa fa-shopping-cart" aria-hidden="true"></i> 
+								<i onclick="addToCart()"class="fa fa-shopping-cart" aria-hidden="true"></i> 
 								<a class="button_special" href="#" class="link_detail">Details</a>
 							</div>
 						</div>							
@@ -107,21 +109,21 @@
 								<img class="image_product" src="01.png">
 								<a class ="product_name" href="#">Spanish stir-fry veg</a>
 								<p class="price_product">$550.00</p>
-								<i class="fa fa-shopping-cart" aria-hidden="true"></i> 
+								<i onclick="addToCart()" class="fa fa-shopping-cart" aria-hidden="true"></i> 
 								<a class="button_special" href="#" class="link_detail">Details</a>
 							</div>
 							<div class="product">
 								<img class="image_product" src="02.png">
 								<a class ="product_name"href="#">Newcastle Brown Ale</a>
 								<p class="price_product">$160.00</p>
-								<i class="fa fa-shopping-cart" aria-hidden="true"></i> 
+								<i onclick="addToCart()" class="fa fa-shopping-cart" aria-hidden="true"></i> 
 								<a class="button_special" href="#" class="link_detail">Details</a>
 							</div>
 							<div class="product">
 								<img class="image_product" src="03.png">
 								<a class ="product_name" href="#">Farm House Vitamin S</a>
 								<p class="price_product">$241.00</p>
-								<i class="fa fa-shopping-cart" aria-hidden="true"></i> 
+								<i onclick="addToCart()" class="fa fa-shopping-cart" aria-hidden="true"></i> 
 								<a class="button_special" href="#" class="link_detail">Details</a>
 							</div>
 						</div>
