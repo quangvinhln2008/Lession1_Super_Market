@@ -20,4 +20,10 @@ var countItems = 0;
 function addToCart(){
   countItems ++ ;
   document.getElementById("countItems").innerHTML = countItems;
+
+  if (countItems > 0)
+  {
+    document.getElementById("countItems").style.color = "#fe8802";
+    document.getElementById("item").style.color = "#fe8802";
+  }
 }
