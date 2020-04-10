@@ -4,9 +4,11 @@
 		<link rel="stylesheet" href="style.css">
 		 <!-- fontawsome -->
 		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-
-		 <!-- Responsive Web -->
+	 <!-- Responsive Web -->
 		<meta name=”viewport” content="width=device-width, initial-scale=1.0"> 
+		<!-- javascritp file -->
+		<script language="javascript" src="main.js"></script>
+
 </head>
 <body>
 	<div class="container">
@@ -40,13 +42,13 @@
 						<h4>Returning Customers: Please Log In</h4>
 						<div class="field">
 								<label class="label">Email Address:</label>
-								<input class="textbox" type="text"><br>
+								<input id ="email" class="textbox" type="text"><br>
 								<label class="label">Password:</label>
-								<input class="textbox margin-text" type="text">
+								<input id="password" class="textbox margin-text" type="password">
 						</div>
 					</form>
 					<div class="box-button">
-						<input class="button" type="submit" value="Sign In">
+						<input onclick="signIn()" class="button" type="submit" value="Sign In">
 						<a href="#">Forgot your password?</a>
 					</div>
 				</div>
