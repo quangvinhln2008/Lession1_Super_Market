@@ -12,3 +12,12 @@ function signIn(){
     alert("Email or Password is incorrect.");
   }
 }
+
+// function addToCart()
+
+// global variable
+var countItems = 0;
+function addToCart(){
+  countItems ++ ;
+  document.getElementById("countItems").innerHTML = countItems;
+}
