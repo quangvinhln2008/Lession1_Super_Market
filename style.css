@@ -78,7 +78,6 @@ body {
 .head-nav2 li:first-child {
     border-left: 0px;
 }
-
 .head-nav2 a.end-link {
     font-weight: bold;
     color:#8ac53f;
@@ -403,10 +402,8 @@ i:hover {
 }
 .contact-content {
     width: 70%;
-    display: flex;
-    flex-direction: column;
 }
-.label-contact {
+.label {
     font-family: Arial,Helvetica,sans-serif; 
     font-size: 15px; 
     color: #4d5255db;
@@ -415,26 +412,15 @@ i:hover {
     margin-left: 20px;
     height: 50px;
 }
-.label-contact-message {
-    font-family: Arial,Helvetica,sans-serif; 
-    font-size: 15px; 
-    color: #4d5255db;
+.textbox {
+    font-size: 16px;
     text-align: left;
-    padding: 20px;
-    margin-left: 20px;
-    height: 50px;
-}
-.textbox-contact-full-name {
-    text-align: right;
-    margin: 10px 20px 10px 30px;
-    width: 50%;
-    border: 1px solid #4d525538;
-}
-.textbox-contact-email {
-    text-align: right;
     margin: 10px 20px 10px 0px;
     width: 50%;
     border: 1px solid #4d525538;
+}
+.margin-text {
+    margin-left: 30px;
 }
 .textarea-message {
     text-align: right;
@@ -454,30 +440,29 @@ i:hover {
 .box-button {
     margin: 30px 0px;
 }
-.button-contact-back {
+.box-button a{
+    color: black;
+    text-decoration: underline;
+    font-size: 14px;
+    margin-left: 20px;
+}
+.box-button a:hover{
+    text-decoration: none;
+}
+.button {
     font-family: Arial,Helvetica,sans-serif; 
     font-size: 15px; 
     color: #4d5255db;
     border: 1px solid #4d525538;
     height: 40px;
-    width: 60px;
+    width: 80px;
     margin-left: 10px;
     cursor: pointer;
 }
-.button-contact-send-now {
-    font-family: Arial,Helvetica,sans-serif;
-    font-size: 15px;
-    color: #4d5255db;
-    border: 1px solid #4d525538;
-    height: 40px;
-    width: 85px;
-    margin-right: 10px;
-    float: right;
-    cursor: pointer;
-}
 .blank {
-    height: 200px;
+    height: 50px;
 }
+
 /* CSS login page */
 .content-login {
     width: 70%;
